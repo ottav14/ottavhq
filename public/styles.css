@@ -1,0 +1,166 @@
+:root {
+	--background: #fff;
+	--text: #000;
+	--accent-1: #111;
+}
+
+* {
+	margin: 0;	
+	user-select: none;
+	font-family: 'Comic Neue', cursive, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: bold;
+	color: #fff;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("images/starry.gif");
+	overflow: hidden;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+}
+
+#title-container {
+	text-align: center;
+}
+
+#title, #credit {
+	color: #fff;
+	font-family: 'Fira Mono', monospace;
+	margin-bottom: 0;
+}
+
+#title {
+	font-size: 20pt;
+}
+
+#credit {
+	font-size: 8pt;
+}
+
+#sites {
+	display: flex;
+	padding-bottom: 3rem;
+}
+
+.site-link {
+	display: flex;
+	flex-direction: column;
+	padding-right: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20pt;
+}
+
+.card {
+	width: 16rem;
+	z-index: -1;
+}
+
+.card-title {
+	text-decoration: underline;
+}
+
+.card-text {
+	font-size: 16pt;
+}
+
+#projects-label {
+	font-size: 32pt;
+	color: #fff;
+	text-align: center;
+}
+
+#cat-pat {
+	position: relative;
+	left: 50rem;
+	top: -10.5rem;
+}
+
+#happy-cat {
+	position: relative;
+	left: 60rem;
+	top: 10rem;
+}
+
+#cat-spin {
+	position: relative;
+	left: -40rem;
+	top: 10rem;
+}
+
+#cat-spin-3d {
+	position: relative;
+	left: -60rem;
+	top: -20rem;
+}
+
+#black-cat-spin {
+	position: relative;
+	left: 20rem;
+	top: -20rem;
+}
+
+#cat-dance {
+	position: relative;
+	left: -5rem;
+	top: -20rem;
+}
+
+#decorations {
+	height: 4rem;
+}
+
+#top {
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+	height: 1rem;
+	padding: 0 1rem 0 1rem;
+}
+
+.icon {
+	font-size: 4rem;
+	color: #fff;
+}
+
+#bg-button {
+	display: none;
+	width: 5rem;
+	height: 5rem;
+}
+
+#github-logo {
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	pointer-events: none;
+}
+
+@media (max-width: 600px) {
+	#cat-pat, #happy-cat, #cat-spin, #cat-spin-3d, #black-cat-spin, #github-logo {
+		display: none;
+	}
+
+	#title {
+		font-size: 8pt;	
+	}
+
+	#credit {
+		font-size: 3pt;
+	}
+}
